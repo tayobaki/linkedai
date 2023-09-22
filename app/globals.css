@@ -2,26 +2,86 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.right-header {
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.headerImage {
+  mask-image: url(../app/assets/headerCiricle.png);
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  mask-type: luminance;
+  background-size: cover;
+  background-blend-mode: screen;
+  mask-mode: luminance;
+}
+
+/* .headerCircle {
+    
+}
+
+.left-header {
+ 
+} */
+
+.purple1 {
+  mask-image: url(../app/assets/purple-lens-flare.png);
+  mask-repeat: no-repeat;
+  mask-type: luminance;
+  mask-size: 850px;
+  position: absolute;
+  border-radius: 100%;
+}
+
+.left-guideline-lens {
+  mask-image: url(../app/assets/purple-lens-flare.png);
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  mask-type: luminance;
+  background-size: cover;
+  background-blend-mode: overlay;
+  mask-mode: luminance;
+}
+
+.trophy-lens {
+  background-image: url(../app/assets/purple-lens-flare.png);
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  mask-type: luminance;
+  background-size: cover;
+  background-blend-mode: overlay;
+  mask-mode: luminance;
+  border-radius: 100%;
+  mask-image: url(../app/assets/purple-lens-flare.png);
+}
+
+.glass {
+  background: rgb(211, 52, 251);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+@media (width <= 769px) {
+  .glass {
+    background: none;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.contactflare {
+  background-image: url(../app/assets/purple-lens-flare.png);
+  mask-size: 750px;
+  width: 500px;
+  height: 500px;
+  mask-repeat: no-repeat;
+  background-size: cover;
+  mask-mode: luminance;
+  border-radius: 50%;
+  mask-image: url(../app/assets/purple-lens-flare.png);
+  mask-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0)
+  );
 }
